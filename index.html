@@ -68,6 +68,22 @@
             height: 100px;
         }
 
+        .imgi img {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+            /* 2s is the duration, ease-in is the timing function */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .bira {
+            height: 300px;
+        }
+
         .bira {
             height: 300px;
         }
@@ -96,6 +112,41 @@
 
         }
 
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .socials img {
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .socials a {
+            display: inline-block;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .socials a:hover {
+            transform: scale(1.1);
+        }
+
+        .socials a i,
+        .socials a img {
+            transition: color 0.3s ease, filter 0.3s ease;
+        }
+
+        .socials a i:hover {
+            color: #1e90ff;
+            /* Change to desired hover color for icons */
+        }
+
+        .socials a img:hover {
+            filter: brightness(1.2);
+            /* Change to desired hover effect for images */
+        }
+
         .image-container img {
             margin-top: 25px;
             height: 100px;
@@ -103,13 +154,49 @@
             object-fit: cover;
             z-index: 1;
         }
+
+        .final {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .final img {
+            width: 250px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
     </style>
 </head>
 
 <body>
     <div class="banner">
-        <div class="image-container">
-            <img src="./textbro.png" alt="Placeholder Image">
+        <div class="header">
+            <div class="image-container">
+                <img src="./textbro.png" alt="Placeholder Image">
+            </div>
+            <div class="socials">
+
+                <a href="" target="_blank" class="hoverp">
+                    <img src="./x (1).png" alt="">
+                </a> <a href="" target="_blank" class="hoverp">
+                    <img src="./tg.webp" alt="">
+                </a>
+                <a href="" target="_blank" class="hoverp">
+                    <img src="./pf.jpeg" alt="">
+                </a>
+                <div class="ca">
+
+                </div>
+
+
+            </div>
         </div>
         <div class="video-container">
             <div class="imgi"> <img src="./abro.png" alt="" class="bira"></div>
@@ -130,7 +217,7 @@
             <p>More than twenty years ago, a clip of Eminem and his friends hilariously mispronouncing
                 Åbro
                 beer as "Ey
-                Bro" went viral, amassing over a million views. <br>Embracing the joke, 20 years later Åbro released a
+                Bro" went viral, amassing over a million views. <br>Embracing the joke, in 2021 Åbro released a
                 special edition
                 beer
                 named
@@ -145,8 +232,15 @@
 
 
     </div>
-    <div class="image-container">
-        <img src="https://via.placeholder.com/800x600" alt="Placeholder Image">
+    <div class="final">
+
+        <img src="./eybro11.webp" alt="Placeholder Image">
+        <img src="./bromeme.jpeg" alt="Placeholder Image">
+        <img src="./images (1).jpeg" alt="Placeholder Image">
+        <img src="./eybro-vs-thebear.webp" alt="Placeholder Image">
+        <img src="./images (3).jpeg" alt="Placeholder Image">
+        <img src="./embro.jpeg" alt="Placeholder Image">
+
     </div>
 
 </body>
